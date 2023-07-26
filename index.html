@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Score Grader</title>
+</head>
+<body>
+    <main>
+            <table class="myTable">
+                <thead>
+                    <tr>
+                        <th>SUBJECTS</th>
+                        <th>SCORE</th>
+                        <th>GRADE</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>English</td>
+                        <td><input type="number" min="0" max="100" class="score"></td>
+                        <td style="border: 1px solid black"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Maths</td>
+                        <td><input type="number" min="0" max="100" class="score"></td>
+                        <td style="border: 1px solid black"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Chemistry</td>
+                        <td><input type="number" min="0" max="100" class="score"></td>
+                        <td style="border: 1px solid black"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Biology</td>
+                        <td><input type="number" min="0" max="100" class="score"></td>
+                        <td style="border: 1px solid black"></td>
+                    </tr>
+
+                    <tr>
+                        <td>French</td>
+                        <td><input type="number" min="0" max="100" class="score"></td>
+                        <td style="border: 1px solid black"></td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="1"><button>Get Result</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>TOTAL</td>
+                        <td class="total" rowspan="1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Average</td>
+                        <td class="average" rowspan="1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Remark</td>
+                        <td class="remark"></td>
+                        <td class="emoji"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+    </main>
+</body>
+</html>
