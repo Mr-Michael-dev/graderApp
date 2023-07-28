@@ -10,14 +10,21 @@ html{
 }
 
 body{ 
-    background-image: url(https://plus.unsplash.com/premium_photo-1670869657576-444dffe3b308?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY2fHx3ZWJzaXRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://images.unsplash.com/photo-1618472609777-b038f1f04b8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDgxfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    
 }
 
 main{
+    width: 80%;
+    margin: auto;
+}
+
+.container{
     width: 80%;
     margin: auto;
     display: flex;
@@ -28,28 +35,66 @@ main{
 
  .myTable{
     margin: 25px 0;
-    padding: 10px;
     width: 100%;
     text-align: start;
     font-size: 0.9rem;
+    border-collapse: collapse;
     border-radius: 5px;
     background-color: rgba(223, 240, 255, 0.527);
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    transition: all .5s;
 } 
 
 
 .myTable thead tr{
-   font-weight: bold;
+   font-weight: bolder;
    text-align: left;
+   transition: all .5s;
 }
 
 .myTable th,
 .myTable td {
-    padding: 5px 5px;
+    padding: 10px 10px;
 }
 
-tr:hover{
-    font-weight: bolder;
-    font-size: large;
+tr.scoreRow:hover{
+   background-color: rgba(255, 255, 255, 0.192);
+}
+
+button{
+    background-color:   rgb(5, 107, 202);
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    transition: all .5s;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgba(196, 20, 143, 0.979);
+    border: none;
+}
+
+#error{
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+
+}
+
+td input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 50%;
+}
+
+td input:focus{
+    outline: none;
+}
+
+td input::placeholder{
+    color: rgba(0, 0, 0, 0.404);
 }
