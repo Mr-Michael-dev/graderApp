@@ -59,21 +59,21 @@ btn.addEventListener("click", () => {
       remark.innerText = "I'm very proud of you!";
       emoji.innerHTML =
         '<img src="./emojis/smiling_face_with_heart_eyes.gif" alt="proud emoji">';
-    } else if (averageScore >= 60 || averageScore < 70) {
+    } else if (averageScore >= 60) {
       remark.innerText = "Yooo, you are very smart!";
       emoji.innerHTML =
         '<img src="./emojis/smiling_face_with_sunglasses.gif" alt="smiling emoji">';
-    } else if (averageScore >= 50 || averageScore < 60) {
+    } else if (averageScore >= 50) {
       remark.innerText = "You can do better!";
       emoji.innerHTML =
         '<img src="./emojis/flexed_biceps.gif" alt="power emoji">';
-    } else if (averageScore >= 45 || averageScore < 50) {
+    } else if (averageScore >= 45) {
       remark.innerText = "You passed!";
       emoji.innerHTML = '<img src="./emojis/thumbs_up.gif" alt="passed emoji">';
     } else {
       remark.innerText = "You disappointed your teacher!.";
       emoji.innerHTML =
-        '<img src="./emojis/man_fscepalming.gif" alt="disappointed emoji">';
+        '<img src="./emojis/man_facepalming.gif" alt="disappointed emoji">';
     }
   }
 });
