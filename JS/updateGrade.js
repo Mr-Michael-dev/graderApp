@@ -17,7 +17,7 @@ scores.forEach((score) => {
     if (scoreValue === "") {
         message = "";
     } else if (isNaN(scoreValue) || scoreValue < 0 || scoreValue > 100) {
-      message = "Invalid score";
+      message = "Invalid";
     } else if (scoreValue >= 70 || scoreValue === 100) {
       message = "A";
     } else if (scoreValue >= 60) {
