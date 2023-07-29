@@ -20,18 +20,35 @@ body{
 }
 
 main{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
-
+/* 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+.heading{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(223, 240, 255, 0.527);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin: 25px 0;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: small;
 }
 
+.heading img{
+    width: 70px;
+}
 
  .myTable{
     margin: 25px 0;
