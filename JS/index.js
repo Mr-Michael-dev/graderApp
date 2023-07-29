@@ -1,4 +1,3 @@
-
 function validateInputs(score) {
   let inputedScore = score.value.trim();
 
