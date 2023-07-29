@@ -45,6 +45,11 @@ btn.addEventListener("click", () => {
   let isValid = true;
 
   scores.forEach((score) => {
+
+    score.addEventListener("input", () => {
+      validateInputs(score);
+    });
+    
     if (!validateInputs(score)) {
       isValid = false;
     }
